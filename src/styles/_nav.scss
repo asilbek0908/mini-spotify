@@ -1,0 +1,36 @@
+nav {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 2rem;
+  align-items: center;
+
+  .spotify {
+    margin-right: 10px;
+  }
+
+  .btn {
+    cursor: pointer;
+    border: 2px solid #bcbcbc;
+    padding: 0.5rem 0.7rem;
+    background: transparent;
+    &:hover {
+      background: #bcbcbc;
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    button {
+      z-index: 10;
+    }
+  }
+}
+
+@media (max-width: 445px) {
+  nav {
+    padding: 0;
+  }
+}
